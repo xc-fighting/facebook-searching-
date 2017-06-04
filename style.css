@@ -1,0 +1,96 @@
+#brand{
+	color:#2b4490;
+}
+#input_part{
+	margin-top: 10px;
+
+}
+#inputtext
+{
+	border-radius: 0px;
+}
+#searchbtn{
+	border-radius: 0px;
+}
+#clearbtn{
+	margin-top:10px;
+	background-color: white;
+	border:1px solid #2b4490;
+	color:#2b4490;
+	border-radius:0px;
+}
+.vertical-center{
+	min-height: 100%;  
+  min-height: 100vh; 
+
+  display: flex;
+  align-items: center;
+}
+.nav-tabs{
+	
+}
+.backp
+{
+	width:80px;
+	height:36px;
+	background-color: white;
+	border:1px solid gray;
+	border-radius:0px;
+
+}
+.postitem{
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.postContent{
+	margin-left: 10px;
+}
+.facebookbtn
+{
+   width:40px;
+   height:40px;
+   background-color: white;
+   border:1px solid gray;
+   background-image:url("facebook.png");
+   padding:1px;
+   margin-left: 27px;
+}
+.col-center-block {  
+    float: none;  
+    display: block;  
+    margin-left: auto;  
+    margin-right: auto;  
+} 
+.star{
+	color:gold;
+} 
+.white
+{
+	color:white;
+}
+.blue{
+	background-color: #2b4490;
+	width:80px;
+	height:34px;
+}
+.detailf
+{
+	width:40px;
+	height:40px;
+	background-color: white;
+	border:1px solid gray;
+}
+#prebtn
+{
+  width:100px;
+  height:40px;
+  border:1px solid gray;
+  background-color: white;
+}
+#nextbtn
+{
+  width:100px;
+  height:40px;
+  border:1px solid gray;
+  background-color: white;
+}

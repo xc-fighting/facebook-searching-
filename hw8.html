@@ -1,0 +1,108 @@
+<! DOCTYPE html>
+<html>
+  <head>
+     <title>homework8</title>
+     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+     <!-- Latest compiled and minified CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+	<link href="style.css" rel="stylesheet">
+
+	
+  </head>
+  <body>
+     
+     
+        <div class="container">
+          <nav class="navbar navbar-default" role="navigation">
+          <div class="row">
+	             <div class="col-md-4">
+		              <p class="navbar-brand" id="brand">FB Search</p>
+		           </div>
+		        <!-- <div class="col-md-2" id="input_part">
+			         
+			              
+
+              </div>-->
+              <div class="col-md-4">
+                  <div class="input-group"  id="input_part">
+                     <input type="text" class="form-control" placeholder="type something..." id="inputtext">
+                     <span class="input-group-btn">
+			                     <button class="blue btn btn-secondary" id="searchbtn" onclick="searchResult()"><span class="white glyphicon glyphicon-search"></span></button>	
+
+                     </span>
+			               
+                  </div>
+                  
+			        </div>
+             
+			        <div class="col-md-4">
+                  <button class="btn btn-outline-primary" id="clearbtn">Clear</button>
+              </div>
+			     
+    
+			        
+	       </div>
+	        </nav>
+     
+	        <ul class="nav nav-pills  nav-justified primary" role="tablist" id="searchTab">
+                <li><a href="#users" role="tab" data-toggle="tab">Users</a></li>
+                <li><a href="#pages" role="tab" data-toggle="tab">Pages</a></li>
+                <li><a href="#events" role="tab" data-toggle="tab">Events</a></li>
+                <li><a href="#places" role="tab" data-toggle="tab">Places</a></li>
+                <li><a href="#groups" role="tab" data-toggle="tab">Groups</a></li>
+                <li><a href="#favorites" role="tab" data-toggle="tab">Favorites</a></li>
+	        </ul>
+            
+            <div class="tab-content">
+               <div class="tab-pane" id="users"></div>
+               <div class="tab-pane" id="pages"></div>
+               <div class="tab-pane" id="events"></div>
+               <div class="tab-pane" id="places"></div>
+               <div class="tab-pane" id="groups"></div>
+               <div class="tab-pane" id="favorites"></div>
+            </div>
+
+
+	    </div>
+    <!-- <div class='container'>
+          <div class='row'>
+               <div class="col-md-6" id='leftpart'><button class="btn prebtn pull-right">previous</button></div>
+               <div class="col-md-6" id='rightpart'><button class="btn nextbtn">next</button></div>
+          </div>
+     </div>-->
+ <!--    <button type="button" class="btn btn-default backp">
+  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> back
+</button>-->
+
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+         <!-- Latest compiled and minified JavaScript -->
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+     <script>
+         window.fbAsyncInit = function() {
+          FB.init({
+            appId      : '356531478081166',
+            xfbml      : true,
+            version    : 'v2.8'
+          });
+          FB.AppEvents.logPageView();
+        };
+
+        (function(d, s, id){
+           var js, fjs = d.getElementsByTagName(s)[0];
+           if (d.getElementById(id)) {return;}
+           js = d.createElement(s); js.id = id;
+           js.src = "//connect.facebook.net/en_US/sdk.js";
+           fjs.parentNode.insertBefore(js, fjs);
+         }(document, 'script', 'facebook-jssdk'));
+
+     </script>
+     <script src="moment.min.js"></script>
+     <script src="myscript.js"></script> 
+
+  </body>
+</html>
+
